@@ -1,0 +1,104 @@
+(progn (load "/home/clam/.emacs.d/elpa/slime-20130302.117/swank-loader.lisp" :verbose t) (funcall (read-from-string "swank-loader:init")) (funcall (read-from-string "swank:start-server") "/tmp/slime.7157"))
+
+This is SBCL 1.0.57.0.debian, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* 
+; loading #P"/home/clam/.emacs.d/elpa/slime-20130302.117/swank-loader.lisp"
+STYLE-WARNING: redefining EMACS-INSPECT (#<BUILT-IN-CLASS T>) in DEFMETHOD
+STYLE-WARNING:
+   Implicitly creating new generic function STREAM-READ-CHAR-WILL-HANG-P.
+WARNING: These Swank interfaces are unimplemented:
+ (DISASSEMBLE-FRAME SLDB-BREAK-AT-START SLDB-BREAK-ON-RETURN)
+;; Swank started at port: 49806.
+49806
+* 
+; in: DEFUN BIGGER
+;     (SETF *SMALL* (1+ (GUESS-MY-NUMBER)))
+; ==>
+;   (SETQ *SMALL* (1+ (GUESS-MY-NUMBER)))
+; 
+; caught WARNING:
+;   undefined variable: *SMALL*
+
+;     (GUESS-MY-NUMBER)
+; 
+; caught STYLE-WARNING:
+;   undefined function: GUESS-MY-NUMBER
+; 
+; compilation unit finished
+;   Undefined function:
+;     GUESS-MY-NUMBER
+;   Undefined variable:
+;     *SMALL*
+;   caught 1 WARNING condition
+;   caught 1 STYLE-WARNING condition
+
+
+(progn (load "/home/clam/.emacs.d/elpa/slime-20130302.117/swank-loader.lisp" :verbose t) (funcall (read-from-string "swank-loader:init")) (funcall (read-from-string "swank:start-server") "/tmp/slime.7157"))
+
+;; swank:close-connection: end of file on #<SB-SYS:FD-STREAM for "socket 127.0.0.1:49806, peer: 127.0.0.1:38735" {10045915F3}>
+
+; loading #P"/home/clam/.emacs.d/elpa/slime-20130302.117/swank-loader.lisp"
+WARNING: Not reloading SWANK.  Package already exists.
+;; Swank started at port: 37933.
+37933
+* 
+; compiling (DEFPARAMETER *NODES* ...)  <menu-bar> <signals> <stop>
+; in: DEFUN GUESS-MY-NUMBER
+;     (+ *SMALL* *BIG*)
+; 
+; caught WARNING:
+;   undefined variable: *BIG*
+; 
+; compilation unit finished
+;   Undefined variable:
+;     *BIG*
+;   caught 1 WARNING condition
+
+; in: DEFUN SMALLER
+;     (SETF *BIG* (1- (GUESS-MY-NUMBER)))
+; ==>
+;   (SETQ *BIG* (1- (GUESS-MY-NUMBER)))
+; 
+; caught WARNING:
+;   undefined variable: *BIG*
+; 
+; compilation unit finished
+;   Undefined variable:
+;     *BIG*
+;   caught 1 WARNING condition
+STYLE-WARNING: redefining COMMON-LISP-USER::BIGGER in DEFUN
+Hello, worldHello, worldhello, world
+; in: DEFUN HELLO-WORLD
+;     (FORAMT T "hello, world")
+; 
+; caught STYLE-WARNING:
+;   undefined function: FORAMT
+; 
+; compilation unit finished
+;   Undefined function:
+;     FORAMT
+;   caught 1 STYLE-WARNING condition
+STYLE-WARNING: redefining COMMON-LISP-USER::HELLO-WORLD in DEFUN
+
+; compiling (DEFUN HELLO-WORLD ...)STYLE-WARNING: redefining COMMON-LISP-USER::HELLO-WORLD in DEFUN
+
+
+; file: /tmp/filetGFyF5
+; in: DEFUN HELLO-WORLD
+;     (FORAMT T "hello, world")
+; 
+; caught STYLE-WARNING:
+;   undefined function: FORAMT
+; 
+; compilation unit finished
+;   Undefined function:
+;     FORAMT
+;   caught 1 STYLE-WARNING condition
+
+
